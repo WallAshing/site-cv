@@ -1,0 +1,69 @@
+#points-of-interests{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+
+  header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    border-top: solid black 6px;
+    padding: 20px 0 4px 0;
+
+    h2{
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0 20px;
+    }
+  }
+
+  .up-arrow, .down-arrow{
+    position: absolute;
+    left: calc(50vw - 12px);
+  }
+
+  .up-arrow{
+    top: 12.5vh;
+  }
+
+  .down-arrow {
+    bottom: 3.5vh;
+
+    svg{
+      transform: rotate(180deg);
+    }
+  }
+
+  article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+
+    section{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: calc(100% - 36px);
+      margin: 23px 18px;
+
+      p{
+        margin: 0 30px;
+        font-weight: 500;
+        line-height: 27px;
+        font-size: 21px;
+      }
+
+      img{
+        width: 80px;
+      }
+    }
+  }
+
+}
