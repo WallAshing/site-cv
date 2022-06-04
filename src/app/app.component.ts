@@ -14,33 +14,6 @@ export class AppComponent {
   }
 
   ngOnInit(){
-    if(this.detectMob()){
-      let header = document.querySelector("header")
-      let headerH = Math.round(window.innerHeight);
-      if(header){
-        if (Math.round(window.innerHeight)>headerH+100 || Math.round(window.innerHeight)<headerH-100)
-        {
-          headerH=Math.round(window.innerHeight);
-        }
-        header.style.height = headerH+"px";
-      }
-    }
+
   }
-
-  public detectMob() {
-    const toMatch = [
-      /Android/i,
-      /webOS/i,
-      /iPhone/i,
-      /iPad/i,
-      /iPod/i,
-      /BlackBerry/i,
-      /Windows Phone/i
-    ];
-
-    return toMatch.some((toMatchItem) => {
-      return navigator.userAgent.match(toMatchItem);
-    });
-  }
-
 }

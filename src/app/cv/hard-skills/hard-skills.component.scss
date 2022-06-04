@@ -2,8 +2,8 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  min-height: 100vh;
-  max-height: 100vh;
+  min-height: var(--screenInnerHeight);
+  max-height: var(--screenInnerHeight);
   width: 100vw;
 
   header {
@@ -11,28 +11,22 @@
     align-items: center;
     height: 70px;
     width: 100%;
-    border-top: solid black 6px;
-    padding: 20px 0 4px 0;
 
     h2{
       font-size: 26px;
       font-weight: 700;
-      margin: 0 20px;
+      text-indent: 20px;
     }
   }
 
   .up-arrow, .down-arrow{
-    position: absolute;
-    left: calc(50vw - 12px);
-  }
-
-  .up-arrow{
-    top: 12.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
   }
 
   .down-arrow {
-    bottom: 3.5vh;
-
     svg{
       transform: rotate(180deg);
     }
