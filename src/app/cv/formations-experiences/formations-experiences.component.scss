@@ -1,4 +1,4 @@
-#formations-experiences{
+#formations-experiences {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -6,20 +6,21 @@
   max-height: var(--screenInnerHeight);
   width: 100vw;
 
-  header{
+  h2 {
     display: flex;
-    align-items: center;
-    height: 70px;
-    width: 100%;
+    align-items: flex-end;
+    height: 50px;
+    width: calc(100vw - 20px);
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 20px;
 
-    h2{
-      font-size: 26px;
-      font-weight: 700;
-      text-indent: 20px;
+    br {
+      display: none;
     }
   }
 
-  .up-arrow, .down-arrow{
+  .up-arrow, .down-arrow {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -27,39 +28,56 @@
   }
 
   .down-arrow {
-    svg{
+    svg {
       transform: rotate(180deg);
     }
   }
 
-  article{
+  article {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: auto;
 
-    ul{
+    ul {
       display: flex;
       justify-content: center;
       flex-direction: column;
       text-align: center;
 
-      li{
-        margin: 25px 0;
-        p{
-          font-size: 18px;
+      li {
+        margin: 15px 0;
+
+        p {
+          font-size: 15px;
           font-weight: 300;
-          margin: 3px;
+          line-height: 20px;
+
+          b {
+            font-weight: 500;
+          }
         }
       }
     }
   }
 
-
-
-
-  .line{
+  .line {
     margin: 30px auto;
   }
 }
+
+// RESPONSIVE
+
+@media screen and (max-width: 390px) {
+  #formations-experiences {
+    h2 {
+      height: 60px;
+      font-size: 20px;
+
+      br {
+        display: block;
+      }
+    }
+  }
+}
+

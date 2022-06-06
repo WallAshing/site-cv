@@ -1,4 +1,4 @@
-#soft-skills-languages{
+#soft-skills-languages {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -6,20 +6,17 @@
   max-height: var(--screenInnerHeight);
   width: 100vw;
 
-  header {
+  h2 {
     display: flex;
-    align-items: center;
-    height: 70px;
+    align-items: flex-end;
+    height: 50px;
     width: 100%;
-
-    h2{
-      font-size: 26px;
-      font-weight: 700;
-      text-indent: 20px;
-    }
+    font-size: 26px;
+    font-weight: 700;
+    text-indent: 20px;
   }
 
-  .up-arrow, .down-arrow{
+  .up-arrow, .down-arrow {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -27,19 +24,18 @@
   }
 
   .down-arrow {
-    svg{
+    svg {
       transform: rotate(180deg);
     }
   }
 
-  article{
+  article {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: auto 0;
 
-    section{
+    section {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
@@ -47,19 +43,28 @@
       width: calc(100% - 36px);
       margin: 15px auto;
 
-      img{
-        width: 60px;
+      img {
+        width: 50px;
       }
 
-      .french{
+      .french {
         width: fit-content;
       }
 
-      p{
+      p {
         line-height: 27px;
         font-size: 21px;
         font-weight: 500;
       }
+    }
+  }
+}
+// RESPONSIVE
+
+@media screen and (max-width: 390px) {
+  #soft-skills-languages{
+    h2 {
+      font-size: 20px;
     }
   }
 }

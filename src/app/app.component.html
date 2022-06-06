@@ -1,7 +1,25 @@
 <header id="header">
     <h1>{{title | uppercase}}</h1>
   <nav>
-
+    <ul id="menu">
+      <li>
+        <a routerLink="cv">CV</a>
+      </li>
+      <li>
+        <a routerLink="portfolio">Portfolio</a>
+      </li>
+      <li>
+        <a routerLink="cv">Adventure mod</a>
+      </li>
+    </ul>
+    <button (click)="displayMenu()" id="menu-button">
+      <svg width="60" height="60" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="70" height="70" rx="8" fill="black"/>
+        <path d="M18 21H53" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        <path d="M18 35H53" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        <path d="M18 49H53" stroke="white" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </button>
   </nav>
   <a href="cv#about-me" class="down-arrow">
     <svg class="down-arrow-svg" width="24" height="34" viewBox="0 0 24 34" fill="none" xmlns="http://www.w3.org/2000/svg"> <!-- ARROW -->
@@ -22,11 +40,11 @@
   <article>
     <section>
       <img src="./assets/logo-dev/github.png" alt="">
-      <a href="github.com/WallAshing">github.com/WallAshing</a>
+      <a href="https://github.com/WallAshing">github.com/WallAshing</a>
     </section>
     <section>
       <img src="./assets/logo-dev/linkedin.png" alt="">
-      <a href="linkedin.com/in/alexandreVauthier">linkedin.com/in/<br>alexandreVauthier</a>
+      <a href="https://linkedin.com/in/alexandreVauthier">linkedin.com/in/<br>alexandreVauthier</a>
     </section>
     <section>
       <svg width="91" height="69" viewBox="0 0 91 69" fill="none" xmlns="http://www.w3.org/2000/svg">

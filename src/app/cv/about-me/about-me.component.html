@@ -1,13 +1,5 @@
 <div id="about-me" class="page-size-container">
-  <header>
-    <h2>À propos de moi</h2>
-  </header>
-
-  <a class="up-arrow" href="cv#header">
-    <svg width="24" height="34" viewBox="0 0 24 34" fill="none" xmlns="http://www.w3.org/2000/svg"> <!-- ARROW -->
-      <path d="M10.5 32C10.5 32.8284 11.1716 33.5 12 33.5C12.8284 33.5 13.5 32.8284 13.5 32L10.5 32ZM13.0607 0.939339C12.4749 0.353552 11.5251 0.353552 10.9393 0.939339L1.3934 10.4853C0.807612 11.0711 0.807612 12.0208 1.3934 12.6066C1.97919 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.939339ZM13.5 32L13.5 2L10.5 2L10.5 32L13.5 32Z" fill="black"/>
-    </svg>
-  </a>
+  <h2>À propos de moi</h2>
 
   <article>
     <section class="about-section-text-left">
@@ -32,8 +24,11 @@
 
     <aside>
       <h3>La BAP c’est quoi ? : </h3>
-      <p>Une Bourse au projet (BAP) est un projet professionnel organisé par l’IIM  où des équipes d’étudiants doivent répondre à une demande de site/app web/application en équipes qui mélangent 3 axes différent afin de développer la cohésion d'équipe au sein d'un projet</p>
-      <button type="button">
+      <div id="about-me-text-box">
+        <div id="about-me-box"></div>
+        <p id="about-me-text">Une Bourse au projet (BAP) est un projet professionnel organisé par l’IIM  où des équipes d’étudiants doivent répondre à une demande de site/app web/application en équipes qui mélangent 3 axes différent afin de développer la cohésion d'équipe au sein d'un projet</p>
+      </div>
+      <button id="about-me-button" (click)="displayParagraph()" type="button">
         <svg width="78" height="27" viewBox="0 0 78 27" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d_74_168)">
             <rect x="4" y="3" width="70" height="19" rx="9.5" fill="white"/>
